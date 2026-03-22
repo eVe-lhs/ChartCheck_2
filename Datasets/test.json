@@ -1,0 +1,59 @@
+{
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "Month",
+            "type": "ordinal"
+        },
+        "y": {
+            "field": "share within laptops in %",
+            "type": "quantitative"
+        },
+        "color": {
+            "field": "share within laptops in %",
+            "type": "nominal"
+        }
+    },
+    "description": "Netbook popularity in 2008 (source: PriceGrabber)",
+    "color": {
+        "scale": {
+            "domain": ["7", "8", "9", "10", "11", "12"],
+            "range": ["#66B2FF", "#66B2FF", "#66B2FF", "#66B2FF", "#66B2FF", "#66B2FF"]
+        }
+    }
+},
+
+{
+    "mark": "pie",
+    "encoding": {
+        "color": {
+            "field": "value",
+            "type": "nominal",
+            "scale": {
+                "domain": ["Agree", "Mixed/only certain projects should be allowed", "Disagree", "Other"],
+                "range": ["#0f9d58", "#66bd63", "#d62728", "#f46d43"]
+            }
+        },
+        "text": {
+            "field": "value",
+            "type": "ordinal",
+            "computed": {
+                "value": {
+                    "bin": {
+                        "field": "value",
+                        "binType": "quantitative"
+                    }
+                }
+            },
+            "style": {
+                "text-anchor": "middle",
+                "font": "Arial",
+                "fontSize": 10,
+                "fontWeight": "bold"
+            }
+        }
+    },
+    "width": 300,
+    "height": 300,
+    "title": "MediaWiki development should stop if it means that more resources are devoted to ensuring wikis were never broken/unavailable/glitchy"
+}

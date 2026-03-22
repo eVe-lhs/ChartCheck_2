@@ -1,0 +1,27 @@
+===================================================================================================================
+  CHARTCHECK EVALUATION MATRIX — Chain-of-Thought Results
+===================================================================================================================
+                       Model  Task Test1_Acc  Test1_F1 Test2_Acc  Test2_F1  Avg_Acc   BLEU ROUGE-L BERTScore
+         Flan-T5-Large (CoT)     M      68.8      67.8      67.9      66.8     68.3   18.2    39.0      90.5
+===================================================================================================================
+
+Test 1 — Per-class report:
+              precision    recall  f1-score   support
+
+     REFUTED     0.7477    0.5310    0.6210       452
+   SUPPORTED     0.6570    0.8337    0.7348       487
+
+    accuracy                         0.6880       939
+   macro avg     0.7023    0.6823    0.6779       939
+weighted avg     0.7006    0.6880    0.6800       939
+
+
+Test 2 — Per-class report:
+              precision    recall  f1-score   support
+
+     REFUTED     0.7616    0.5083    0.6097       484
+   SUPPORTED     0.6383    0.8451    0.7273       497
+
+    accuracy                         0.6789       981
+   macro avg     0.7000    0.6767    0.6685       981
+weighted avg     0.6991    0.6789    0.6692       981

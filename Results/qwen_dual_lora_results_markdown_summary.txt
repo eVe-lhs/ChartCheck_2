@@ -1,0 +1,57 @@
+===================================================================================================================
+  CHARTCHECK EVALUATION MATRIX — Qwen2.5-7B Results (VLM+LLM-Adapter)
+===================================================================================================================
+                       Model                Task Test1_Acc  Test1_F1 Test2_Acc  Test2_F1  Avg_Acc   BLEU ROUGE-L BERTScore
+          ChartSpec+Qwen2.5-7B(Markdown)     M      79.8      79.7      78.6      78.6     79.2   17.5    37.0      90.3
+===================================================================================================================
+
+Test 1 — Per-class report:
+              precision    recall  f1-score   support
+
+     REFUTED     0.8005    0.7721    0.7860       452
+   SUPPORTED     0.7952    0.8214    0.8081       487
+
+    accuracy                         0.7977       939
+   macro avg     0.7978    0.7967    0.7971       939
+weighted avg     0.7977    0.7977    0.7975       939
+
+
+Test 2 — Per-class report:
+              precision    recall  f1-score   support
+
+     REFUTED     0.7878    0.7748    0.7812       484
+   SUPPORTED     0.7842    0.7968    0.7904       497
+
+    accuracy                         0.7859       981
+   macro avg     0.7860    0.7858    0.7858       981
+weighted avg     0.7860    0.7859    0.7859       
+
+
+
+Per-Chart-Type Accuracy Test 1
+------------------------------------------------------------
+pie_chart                        85.2%    378
+barchart_vertical                80.7%    212
+line_chart                       72.8%    202
+barchart_horizontal              78.4%    74
+histogram                        71.0%    31
+area                             66.7%    24
+scatter_plot                     76.9%    13
+unknown                          66.7%    3
+bar+line                         50.0%    2
+------------------------------------------------------------
+Total samples accounted for: 939 / 
+
+
+Per-Chart-Type Test 2
+------------------------------------------------------------
+pie_chart                        81.1%    433
+barchart_vertical                79.3%    241
+line_chart                       72.0%    189
+barchart_horizontal              84.1%    69
+histogram                        47.8%    23
+area                             90.0%    20
+scatter_plot                    100.0%    6
+------------------------------------------------------------
+Total samples accounted for: 981 / 981
+
